@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Video Call Website using Next.js, Clerk, and Stream
+### https://zoomer-sepia.vercel.app
 
-## Getting Started
+This project is a video call website built using **Next.js**, **Clerk** for user authentication, and **Stream** for video calling functionality.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- User authentication and management powered by **Clerk**.
+- Real-time video call functionality using **Stream**.
+- Responsive design and seamless user experience.
+  
+## Prerequisites
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Before starting, ensure you have the following:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. **Node.js** installed on your machine.
+2. An account on [**Clerk**](https://clerk.dev/) for authentication.
+3. An account on [**Stream**](https://getstream.io/) for video streaming services.
+4. **Tailwind CSS** for styling.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 1. Clone the repository
+    ```bash
+    git clone https://github.com/yourusername/video-call-app.git
+    cd video-call-app
+    cd nextjs-flight-booking-app
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+2. Set up environment variables
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```bash
+   NEXT_PUBLIC_CLERK_FRONTEND_API=your-clerk-frontend-api-key
+   CLERK_API_KEY=your-clerk-api-key
+   NEXT_PUBLIC_STREAM_API_KEY=your-stream-api-key
+   STREAM_API_SECRET=your-stream-api-secret
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+3. Install the dependencies:
+   ```bash
+   npm install
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+4. Deployment 
+For deploying your Next.js project, use Vercel or any other platform of your choice. Make sure to set the environment variables in your deployment environment as well.
